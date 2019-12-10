@@ -59,4 +59,4 @@ for entry in removeList:
 tree.write(outfile+'.svg')
 
 #convert to svg using inkscape
-subprocess.call(['inkscape', outfile+'.svg', '--export-pdf='+outfile+'.pdf'])
+subprocess.call(['inkscape', outfile+'.svg', '--export-pdf='+outfile+'.pdf', '--export-ignore-filters'])
